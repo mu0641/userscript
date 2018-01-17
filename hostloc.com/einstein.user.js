@@ -390,12 +390,12 @@ nw.c({
 
           $.get(link).then(function(resp){
             if(resp.indexOf('Out of Stock')>=0){
-              setTimeout(process, 3000);
+              setTimeout(process, 800);
             }else{
               location.href = link;
             }
           },function(){
-            setTimeout(process, 3000);
+            setTimeout(process, 800);
           });
         }
 
